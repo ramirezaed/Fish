@@ -10,6 +10,7 @@
     <unique-id>3phjf8c2bcezm</unique-id>
     <saved-with-version>28000</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
@@ -19,6 +20,7 @@
     <used-behaviors>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
@@ -80,8 +82,11 @@
                 <behavior-type name="Sine" sid="363398789005242">
                     <behavior id="Sin" />
                 </behavior-type>
+                <behavior-type name="BoundToLayout" sid="861701216659515">
+                    <behavior id="bound" />
+                </behavior-type>
             </behaviors>
-            <texture original-source="D:\Facultad\Topicos Avanzados\repo\fish\Imagenes\pescado.png" />
+            <texture original-source="D:\Facultad\Topicos Avanzados\repo\fish\Imagenes\pescados\Afondo.jpg" />
         </object-type>
         <object-type name="JumpThruTile" sid="375702072619454">
             <plugin id="TiledBg" />
@@ -99,7 +104,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="239498728867639" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenovo\Desktop\Nueva carpeta\istockphoto-1151233929-612x612.jpg" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Facultad\Topicos Avanzados\repo\fish\Imagenes\1.jpg" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -175,6 +180,128 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Text" sid="310139466036327">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Audio" sid="209218213173055">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="Sprite" sid="776746380125371">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="BoundToLayout" sid="486462907476033">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="246202079403433">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="625109294243899" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.491525" original-source="D:\Facultad\Topicos Avanzados\repo\fish\Imagenes\pescados\1.png">
+                        <collision-poly>
+                            <point x="0.227273" y="0.186441" />
+                            <point x="0.5" y="0.118644" />
+                            <point x="0.787879" y="0.169492" />
+                            <point x="0.984848" y="0.491525" />
+                            <point x="0.848485" y="0.881356" />
+                            <point x="0.5" y="0.949153" />
+                            <point x="0.242424" y="0.779661" />
+                            <point x="0.030303" y="0.491525" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="541607211039361">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="991551086868177">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="872838498911113">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="142198372095351" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Facultad\Topicos Avanzados\repo\fish\Imagenes\pescados\3.png">
+                        <collision-poly>
+                            <point x="0.171875" y="0.171875" />
+                            <point x="0.5" y="0.125" />
+                            <point x="0.796875" y="0.203125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.796875" y="0.796875" />
+                            <point x="0.5" y="0.875" />
+                            <point x="0.203125" y="0.796875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="596016507278316">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="354552668651047">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="505349446159754">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="327760896402751" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Facultad\Topicos Avanzados\repo\fish\Imagenes\pescados\2.png">
+                        <collision-poly>
+                            <point x="0.34375" y="0.34375" />
+                            <point x="0.5" y="0.21875" />
+                            <point x="0.734375" y="0.265625" />
+                            <point x="0.953125" y="0.5" />
+                            <point x="0.734375" y="0.734375" />
+                            <point x="0.5" y="0.796875" />
+                            <point x="0.296875" y="0.703125" />
+                            <point x="0.03125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="707826031132988">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="953857615360528">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="214341493677063">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="413845271085221" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Facultad\Topicos Avanzados\repo\fish\Imagenes\pescados\5.png">
+                        <collision-poly>
+                            <point x="0.90625" y="0.5" />
+                            <point x="0.6875" y="0.6875" />
+                            <point x="0.5" y="0.78125" />
+                            <point x="0.234375" y="0.765625" />
+                            <point x="0.03125" y="0.5" />
+                            <point x="0.234375" y="0.234375" />
+                            <point x="0.5" y="0.109375" />
+                            <point x="0.671875" y="0.328125" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite5" sid="168390640086465">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="523302859484521" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -188,9 +315,26 @@
     <global-instances>
         <global-instance type="Keyboard" uid="20" />
         <global-instance type="Mouse" uid="27" />
+        <global-instance type="Audio" uid="29">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
     </global-instances>
     <sounds-folder />
-    <music-folder />
+    <music-folder>
+        <file name="sound ogg 1.ogg" />
+        <file name="sound ogg 5.ogg" />
+    </music-folder>
     <files-folder>
         <file-folder name="Icons">
             <file name="icon-16.png" />
