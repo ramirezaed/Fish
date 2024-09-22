@@ -12,7 +12,11 @@
                     <param id="2" name="Object clicked">play</param>
                 </condition>
             </conditions>
-            <actions />
+            <actions>
+                <action id="3" name="Start" sid="681701540474529" type="play">
+                    <param id="0" name="From">0</param>
+                </action>
+            </actions>
         </event-block>
         <event-block sid="159897796449288">
             <conditions>
@@ -28,6 +32,12 @@
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
+        </event-block>
+        <event-block sid="415885824208388">
+            <conditions>
+                <condition id="6" name="On frame changed" sid="921727081399744" type="play" />
+            </conditions>
+            <actions />
         </event-block>
     </events>
 </c2eventsheet>

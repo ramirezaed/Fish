@@ -2,5 +2,14 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
-    <events />
+    <events>
+        <event-block sid="784114815506157">
+            <conditions>
+                <condition id="-14" name="Pick by unique ID" sid="966125312945803" type="ProgressBar">
+                    <param id="0" name="Unique ID">ProgressBar.Progress</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+    </events>
 </c2eventsheet>

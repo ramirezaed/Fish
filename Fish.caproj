@@ -24,7 +24,9 @@
     <used-behaviors>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="Timer" version="1">Timer</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="custom" version="1">Custom Movement</behavior>
         <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
@@ -363,11 +365,70 @@
         <object-type name="TextBox" sid="594451633170497">
             <plugin id="TextBox" />
         </object-type>
-        <object-type name="Puntaje" sid="603508796431314">
+        <object-type global="1" name="Puntaje" sid="603508796431314">
             <plugin id="TextBox" />
         </object-type>
         <object-type name="ProgressBar" sid="408879493726479">
             <plugin id="progressbar" />
+            <behaviors>
+                <behavior-type name="Timer" sid="813944760665947">
+                    <behavior id="Timer" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Sprite12" sid="496268011953019">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="997631675713510">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="CustomMovement" sid="966409359127160">
+                    <behavior id="custom" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="320100532660876" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite13" sid="560192938681316">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="569136706852386" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501075" original-source="C:\Users\Luis\fish\Imagenes\tronco-desgastado-aislado-sobre-fondo-blanco-que-muestra-texturas-naturales_35766-35124.jpg">
+                        <collision-poly>
+                            <point x="0.998792" y="0.00215054" />
+                            <point x="0.998792" y="0.997849" />
+                            <point x="0.00120773" y="0.997849" />
+                            <point x="0.00120773" y="0.00215054" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite14" sid="822725178459564">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="864506896960409">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="650566734286440" speed="5">
+                    <frame duration="1" hotspotX="0.50075" hotspotY="0.5" original-source="C:\Users\Luis\fish\Imagenes\tronco-sinfondo.png">
+                        <collision-poly>
+                            <point x="0.130435" y="0.23262" />
+                            <point x="0.49925" y="0.315508" />
+                            <point x="0.875562" y="0.221925" />
+                            <point x="0.955023" y="0.5" />
+                            <point x="0.845577" y="0.724599" />
+                            <point x="0.157421" y="0.719251" />
+                            <point x="0.023988" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />
