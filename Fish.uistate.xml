@@ -10,11 +10,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">pantalla inicio</layout>
-        <layout order="2">uno</layout>
-        <layout active="1" order="3">juego</layout>
-        <event-sheet order="1">eventos inicio</event-sheet>
-        <event-sheet order="4">Event sheet 1</event-sheet>
+        <layout order="1">pantalla inicio</layout>
+        <layout order="3">uno</layout>
+        <layout active="1" order="4">juego</layout>
+        <event-sheet order="2">eventos inicio</event-sheet>
+        <event-sheet order="5">Event sheet 1</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -43,12 +43,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite5/" />
         <folder expanded="1" path="animation-folder/Sprite6/" />
         <folder expanded="1" path="animation-folder/Sprite7/" />
-        <folder expanded="1" path="animation-folder/Sprite8/" />
+        <folder expanded="1" path="animation-folder/jugador/" />
         <folder expanded="1" path="animation-folder/Sprite9/" />
-        <folder expanded="1" path="animation-folder/Sprite10/" />
+        <folder expanded="1" path="animation-folder/surubi/" />
         <folder expanded="1" path="animation-folder/Sprite11/" />
-        <folder expanded="1" path="animation-folder/Sprite12/" />
+        <folder expanded="1" path="animation-folder/anzuelo/" />
         <folder expanded="1" path="animation-folder/Sprite13/" />
-        <folder expanded="1" path="animation-folder/Sprite14/" />
+        <folder expanded="1" path="animation-folder/tronco/" />
     </folders-expanded>
 </c2uistate>

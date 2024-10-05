@@ -10,6 +10,7 @@
     <unique-id>3phjf8c2bcezm</unique-id>
     <saved-with-version>28000</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
@@ -22,11 +23,11 @@
         <plugin author="Scirra" id="progressbar" version="1">Progress bar</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="Timer" version="1">Timer</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
-        <behavior author="Scirra" id="custom" version="1">Custom Movement</behavior>
         <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
@@ -259,11 +260,6 @@
         </object-type>
         <object-type name="Sprite6" sid="651568006856481">
             <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="915395876004480">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="648406303612007" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -278,7 +274,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite8" sid="429492391871934">
+        <object-type name="jugador" sid="429492391871934">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="153402130800890" speed="5">
@@ -316,7 +312,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite10" sid="214016480816574">
+        <object-type name="surubi" sid="214016480816574">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="BoundToLayout" sid="985413055139556">
@@ -376,14 +372,14 @@
                 </behavior-type>
             </behaviors>
         </object-type>
-        <object-type name="Sprite12" sid="496268011953019">
+        <object-type name="anzuelo" sid="496268011953019">
             <plugin id="Sprite" />
             <behaviors>
-                <behavior-type name="Solid" sid="997631675713510">
-                    <behavior id="solid" />
+                <behavior-type name="8Direction" sid="656157958654731">
+                    <behavior id="EightDir" />
                 </behavior-type>
-                <behavior-type name="CustomMovement" sid="966409359127160">
-                    <behavior id="custom" />
+                <behavior-type name="ScrollTo" sid="952461111592355">
+                    <behavior id="scrollto" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -407,7 +403,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite14" sid="822725178459564">
+        <object-type name="tronco" sid="822725178459564">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Sine" sid="864506896960409">
@@ -429,6 +425,9 @@
                     </frame>
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type global="1" name="Array" sid="529647292014307">
+            <plugin id="Arr" />
         </object-type>
     </object-folder>
     <families />

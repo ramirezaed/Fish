@@ -3,13 +3,22 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <variable constant="0" name="puntaje" sid="957676269862857" static="0" type="number">0</variable>
         <event-block sid="784114815506157">
             <conditions>
-                <condition id="-14" name="Pick by unique ID" sid="966125312945803" type="ProgressBar">
-                    <param id="0" name="Unique ID">ProgressBar.Progress</param>
+                <condition id="0" name="On collision with another object" sid="842052717401213" type="anzuelo">
+                    <param id="0" name="Object">surubi</param>
                 </condition>
             </conditions>
-            <actions />
+            <actions>
+                <action id="-10" name="Add to" sid="800869715392520" type="System">
+                    <param id="0" name="Variable">puntaje</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="718383554831629" type="Puntaje">
+                    <param id="0" name="Text">puntaje</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>
