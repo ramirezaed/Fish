@@ -306,8 +306,6 @@
     <families />
     <layout-folder>
         <layout>pantalla inicio.xml</layout>
-        <layout>juego.xml</layout>
-        <layout>uno.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>eventos inicio.xml</event-sheet>
