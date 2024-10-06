@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>eventos juego</name>
+    <events>
+        <event-block sid="171811992026573">
+            <conditions />
+            <actions />
+        </event-block>
+        <event-block sid="452325824182541">
+            <conditions />
+            <actions />
+        </event-block>
+        <event-block sid="998409148810575">
+            <conditions />
+            <actions />
+        </event-block>
+    </events>
+</c2eventsheet>

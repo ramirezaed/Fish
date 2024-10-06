@@ -15,12 +15,17 @@
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="progressbar" version="1">Progress bar</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="Timer" version="1">Timer</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="custom" version="1">Custom Movement</behavior>
         <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
@@ -30,8 +35,8 @@
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
     <window-size>
-        <width>640</width>
-        <height>480</height>
+        <width>1710</width>
+        <height>960</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
@@ -189,11 +194,11 @@
         <object-type name="Sprite" sid="776746380125371">
             <plugin id="Sprite" />
             <behaviors>
-                <behavior-type name="BoundToLayout" sid="486462907476033">
-                    <behavior id="bound" />
-                </behavior-type>
                 <behavior-type name="Sine" sid="246202079403433">
                     <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="486462907476033">
+                    <behavior id="bound" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -273,22 +278,22 @@
                 <behavior-type name="Sine" sid="953857615360528">
                     <behavior id="Sin" />
                 </behavior-type>
-                <behavior-type name="BoundToLayout" sid="214341493677063">
-                    <behavior id="bound" />
+                <behavior-type name="Bullet" sid="340930578065799">
+                    <behavior id="Bullet" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="413845271085221" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Facultad\Topicos Avanzados\repo\fish\Imagenes\pescados\5.png">
                         <collision-poly>
-                            <point x="0.90625" y="0.5" />
-                            <point x="0.6875" y="0.6875" />
-                            <point x="0.5" y="0.78125" />
-                            <point x="0.234375" y="0.765625" />
-                            <point x="0.03125" y="0.5" />
-                            <point x="0.234375" y="0.234375" />
+                            <point x="0.328125" y="0.328125" />
                             <point x="0.5" y="0.109375" />
-                            <point x="0.671875" y="0.328125" />
+                            <point x="0.765625" y="0.234375" />
+                            <point x="0.96875" y="0.5" />
+                            <point x="0.765625" y="0.765625" />
+                            <point x="0.5" y="0.78125" />
+                            <point x="0.3125" y="0.6875" />
+                            <point x="0.09375" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -302,13 +307,516 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Sprite8" sid="714571302733501">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="920850172925036">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="269993520319090" speed="5">
+                    <frame duration="1" hotspotX="0.539604" hotspotY="0.520295" original-source="C:\Users\Luis\fish\Imagenes\Lpescador-removebg-preview.png">
+                        <collision-poly>
+                            <point x="0.294554" y="0.154982" />
+                            <point x="0.539604" y="0.357934" />
+                            <point x="0.777228" y="0.166052" />
+                            <point x="0.933168" y="0.520295" />
+                            <point x="0.809406" y="0.922509" />
+                            <point x="0.539604" y="0.929889" />
+                            <point x="0.274752" y="0.915129" />
+                            <point x="0.269802" y="0.520295" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite14" sid="955656918824025">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="682984867508061">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Sine2" sid="728931793567602">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="136897110169787" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenovo\Downloads\icons8-madera-100.png">
+                        <collision-poly>
+                            <point x="0.130435" y="0.23262" />
+                            <point x="0.49925" y="0.315508" />
+                            <point x="0.875562" y="0.221925" />
+                            <point x="0.955023" y="0.5" />
+                            <point x="0.845577" y="0.724599" />
+                            <point x="0.157421" y="0.719251" />
+                            <point x="0.023988" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite10" sid="992093343548457">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="986923782146068">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="494328937522607">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="835545320577754" speed="5">
+                    <frame duration="1" hotspotX="0.495798" hotspotY="0.48" original-source="C:\Users\Luis\fish\Imagenes\Lsurubi-removebg-preview.png">
+                        <collision-poly>
+                            <point x="0.031513" y="0.286667" />
+                            <point x="0.495798" y="0.0933327" />
+                            <point x="0.905462" y="0.46" />
+                            <point x="0.945378" y="0.48" />
+                            <point x="0.972689" y="0.713333" />
+                            <point x="0.495798" y="0.773334" />
+                            <point x="0.012605" y="0.733333" />
+                            <point x="0.016807" y="0.48" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite12" sid="840694226444928">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="225197634502851">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="CustomMovement" sid="250345963121079">
+                    <behavior id="custom" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="621117321666166" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ProgressBar" sid="293108184429756">
+            <plugin id="progressbar" />
+            <behaviors>
+                <behavior-type name="Timer" sid="778515454281742">
+                    <behavior id="Timer" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type global="1" name="Puntaje" sid="772687576290910">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="Afondo" sid="174111380854765">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="518650218982262" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenovo\Desktop\Nueva carpeta\fish\Imagenes\Afondo.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="498657633711291">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="884693501451139">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="145010146102233" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite7" sid="461331487974464">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="114657509533465" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenovo\Desktop\Nueva carpeta\fish\Imagenes\pescados\a7.png">
+                        <collision-poly>
+                            <point x="0.328125" y="0.328125" />
+                            <point x="0.5" y="0.15625" />
+                            <point x="0.75" y="0.25" />
+                            <point x="1" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.84375" />
+                            <point x="0.328125" y="0.671875" />
+                            <point x="0.015625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite9" sid="501945246123105">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="232757563734818" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenovo\Desktop\Nueva carpeta\fish\Imagenes\fondo de pantlla\desktop-wallpaper-cartoon-blue-sky-sky-anime.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite11" sid="686278088958045">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="750082048575728" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenovo\Downloads\126450039-fondo-de-ondas-de-agua-superficie-de-dibujos-animados-de-río-de-mar-océano-de-patrón-líquido.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground" sid="440614468711757">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lenovo\Desktop\Nueva carpeta\fish\Imagenes\fondo de pantlla\rio.png" />
+        </object-type>
+        <object-type name="TiledBackground2" sid="477427561538806">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lenovo\Downloads\rio.jfif" />
+        </object-type>
+        <object-type name="TiledBackground3" sid="366882778979606">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lenovo\Desktop\Nueva carpeta\fish\Imagenes\fondo de pantlla\onyxprj190100252_1.jpg" />
+        </object-type>
+        <object-type name="TiledBackground4" sid="267341018535158">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lenovo\Desktop\Nueva carpeta\fish\Imagenes\fondo de pantlla\onyxprj190100252_1.jpg" />
+        </object-type>
+        <object-type name="TiledBackground5" sid="697039628725304">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lenovo\Desktop\Nueva carpeta\fish\Imagenes\fondo de pantlla\images.jfif" />
+        </object-type>
+        <object-type name="TiledBackground7" sid="136925540751821">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lenovo\Desktop\Nueva carpeta\fish\Imagenes\fondo de pantlla\images.jfif" />
+        </object-type>
+        <object-type name="TiledBackground8" sid="384821142158582">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lenovo\Desktop\Nueva carpeta\fish\Imagenes\fondo de pantlla\desktop-wallpaper-cartoon-blue-sky-sky-anime.jpg" />
+        </object-type>
+        <object-type name="TiledBackground9" sid="609050550988322">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lenovo\Desktop\Nueva carpeta\fish\Imagenes\Afondo.jpg" />
+        </object-type>
+        <object-type name="TiledBackground10" sid="668635476057355">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lenovo\Desktop\Nueva carpeta\fish\Imagenes\fondo de pantlla\desktop-wallpaper-cartoon-blue-sky-sky-anime.jpg" />
+        </object-type>
+        <object-type name="rio" sid="909560244300457">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="538014442926791" speed="5">
+                    <frame duration="1" hotspotX="0.500682" hotspotY="0.5" original-source="C:\Users\Lenovo\Desktop\Nueva carpeta\fish\Imagenes\fondo de pantlla\rio.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground6" sid="694994129603707">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lenovo\Desktop\Nueva carpeta\fish\Imagenes\fondo de pantlla\arena.png" />
+        </object-type>
+        <object-type name="Sprite13" sid="843977223745121">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="747502727929552" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenovo\Desktop\Nueva carpeta\fish\Imagenes\pescados\a1.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.21875" />
+                            <point x="0.5" y="0.15625" />
+                            <point x="0.796875" y="0.203125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.859375" y="0.859375" />
+                            <point x="0.5" y="0.921875" />
+                            <point x="0.234375" y="0.765625" />
+                            <point x="0.015625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite15" sid="417071205016634">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="715055457104259" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenovo\Desktop\Nueva carpeta\fish\Imagenes\pescados\a7.png">
+                        <collision-poly>
+                            <point x="0.96875" y="0.5" />
+                            <point x="0.703125" y="0.703125" />
+                            <point x="0.5" y="0.796875" />
+                            <point x="0.265625" y="0.734375" />
+                            <point x="0.046875" y="0.5" />
+                            <point x="0.265625" y="0.265625" />
+                            <point x="0.5" y="0.21875" />
+                            <point x="0.65625" y="0.34375" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite16" sid="994840340358995">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="855365359794759" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenovo\Desktop\Nueva carpeta\fish\Imagenes\pescados\a4.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.125" />
+                            <point x="0.75" y="0.25" />
+                            <point x="1" y="0.5" />
+                            <point x="0.796875" y="0.796875" />
+                            <point x="0.5" y="0.859375" />
+                            <point x="0.265625" y="0.734375" />
+                            <point x="0.03125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite17" sid="593128001724903">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="983186493865326" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenovo\Desktop\Nueva carpeta\fish\Imagenes\pescados\a3.png">
+                        <collision-poly>
+                            <point x="0.171875" y="0.171875" />
+                            <point x="0.5" y="0.125" />
+                            <point x="0.796875" y="0.203125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.796875" y="0.796875" />
+                            <point x="0.5" y="0.875" />
+                            <point x="0.203125" y="0.796875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite18" sid="178502050945976">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="205542271656550" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenovo\Desktop\Nueva carpeta\fish\Imagenes\pescados\a6.png">
+                        <collision-poly>
+                            <point x="0.296875" y="0.296875" />
+                            <point x="0.5" y="0.09375" />
+                            <point x="0.78125" y="0.21875" />
+                            <point x="1" y="0.5" />
+                            <point x="0.78125" y="0.78125" />
+                            <point x="0.5" y="0.90625" />
+                            <point x="0.296875" y="0.703125" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite19" sid="616190996095328">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="270107654340108">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="CustomMovement" sid="291496021371831">
+                    <behavior id="custom" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="186311825043159" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenovo\Desktop\Nueva carpeta\fish\Imagenes\pescados\a4.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.125" />
+                            <point x="0.75" y="0.25" />
+                            <point x="1" y="0.5" />
+                            <point x="0.796875" y="0.796875" />
+                            <point x="0.5" y="0.859375" />
+                            <point x="0.265625" y="0.734375" />
+                            <point x="0.03125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite20" sid="514130453773672">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="690402699912043">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="559755549620466" speed="5">
+                    <frame duration="1" hotspotX="0.50077" hotspotY="0.514286" original-source="C:\Users\Lenovo\Desktop\Nueva carpeta\fish\Imagenes\fondo de pantlla\olas.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite21" sid="808283932422796">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="418823507685513">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="396701237383143" speed="5">
+                    <frame duration="1" hotspotX="0.500754" hotspotY="0.5" original-source="C:\Users\Lenovo\Desktop\Nueva carpeta\fish\Imagenes\fondo de pantlla\olas.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite22" sid="240039762161903">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="536536644752283">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="223581846894657">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="556207666709876" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenovo\Desktop\Nueva carpeta\fish\Imagenes\pescados\000.png">
+                        <collision-poly>
+                            <point x="0.131667" y="0.365741" />
+                            <point x="0.5" y="0.231481" />
+                            <point x="0.825" y="0.486111" />
+                            <point x="0.856667" y="0.5" />
+                            <point x="0.878333" y="0.662037" />
+                            <point x="0.5" y="0.703704" />
+                            <point x="0.116667" y="0.675926" />
+                            <point x="0.12" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite23" sid="514334195214973">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="311187555611497">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="564427241376001" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenovo\Desktop\Nueva carpeta\fish\Imagenes\pescados\000.png">
+                        <collision-poly>
+                            <point x="0.88" y="0.5" />
+                            <point x="0.883333" y="0.675926" />
+                            <point x="0.5" y="0.703704" />
+                            <point x="0.121667" y="0.662037" />
+                            <point x="0.143333" y="0.5" />
+                            <point x="0.175" y="0.486111" />
+                            <point x="0.5" y="0.231481" />
+                            <point x="0.868333" y="0.365741" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite24" sid="349761888461186">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine2" sid="371052460276824">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="946513677938695">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="865721338736698" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenovo\Desktop\Nueva carpeta\fish\Imagenes\pescados\000.png">
+                        <collision-poly>
+                            <point x="0.88" y="0.5" />
+                            <point x="0.883333" y="0.675926" />
+                            <point x="0.5" y="0.703704" />
+                            <point x="0.121667" y="0.662037" />
+                            <point x="0.143333" y="0.5" />
+                            <point x="0.175" y="0.486111" />
+                            <point x="0.5" y="0.231481" />
+                            <point x="0.868333" y="0.365741" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite25" sid="544597551209622">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="384689009755478">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="570383011490630" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenovo\Desktop\Nueva carpeta\fish\Imagenes\pescados\000.png">
+                        <collision-poly>
+                            <point x="0.88" y="0.5" />
+                            <point x="0.883333" y="0.675926" />
+                            <point x="0.5" y="0.703704" />
+                            <point x="0.121667" y="0.662037" />
+                            <point x="0.143333" y="0.5" />
+                            <point x="0.175" y="0.486111" />
+                            <point x="0.5" y="0.231481" />
+                            <point x="0.868333" y="0.365741" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite26" sid="263546635143773">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="364646451738563" speed="5">
+                    <frame duration="1" hotspotX="0.501859" hotspotY="0.502618" original-source="C:\Users\Lenovo\Desktop\Nueva carpeta\fish\Imagenes\piedra.jfif" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite27" sid="162878168071948">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="800492303835751" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenovo\Desktop\Nueva carpeta\fish\Imagenes\piedra.png">
+                        <collision-poly>
+                            <point x="0.259766" y="0.259766" />
+                            <point x="0.5" y="0.15625" />
+                            <point x="0.740234" y="0.259766" />
+                            <point x="0.794922" y="0.5" />
+                            <point x="0.806641" y="0.806641" />
+                            <point x="0.166016" y="0.833984" />
+                            <point x="0.167969" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite28" sid="912478575128669">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="533893917608828" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenovo\Desktop\Nueva carpeta\fish\Imagenes\granito.png">
+                        <collision-poly>
+                            <point x="0.228516" y="0.228516" />
+                            <point x="0.5" y="0.121094" />
+                            <point x="0.763672" y="0.236328" />
+                            <point x="0.96875" y="0.5" />
+                            <point x="0.792969" y="0.792969" />
+                            <point x="0.5" y="0.892578" />
+                            <point x="0.195313" y="0.804688" />
+                            <point x="0.00390625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>pantalla inicio.xml</layout>
+        <layout>juego.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>eventos inicio.xml</event-sheet>
+        <event-sheet>eventos juego.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="20" />

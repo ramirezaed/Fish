@@ -12,7 +12,11 @@
                     <param id="2" name="Object clicked">play</param>
                 </condition>
             </conditions>
-            <actions />
+            <actions>
+                <action id="-2" name="Go to layout" sid="386135947985437" type="System">
+                    <param id="0" name="Layout">juego</param>
+                </action>
+            </actions>
         </event-block>
         <event-block sid="159897796449288">
             <conditions>
