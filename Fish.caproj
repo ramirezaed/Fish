@@ -808,6 +808,9 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Puntos" sid="375474340388027">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
