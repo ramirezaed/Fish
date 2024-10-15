@@ -80,10 +80,10 @@
                 </instance>
                 <instance type="highScore" uid="24">
                     <properties>
-                        <text>High Score</text>
+                        <text>Record</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-35,700,0</font>
-                        <color>255,255,255</color>
+                        <color>255,255,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
@@ -93,7 +93,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>498</x>
+                        <x>549</x>
                         <y>378</y>
                         <z>0</z>
                         <width>233</width>
@@ -107,10 +107,10 @@
                 </instance>
                 <instance type="yourScore" uid="25">
                     <properties>
-                        <text>Your Score</text>
+                        <text>Tu Puntaje</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-35,700,0</font>
-                        <color>255,255,255</color>
+                        <color>255,255,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
@@ -142,8 +142,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>783</x>
-                        <y>657</y>
+                        <x>831</x>
+                        <y>666</y>
                         <z>0</z>
                         <width>156</width>
                         <height>104</height>

@@ -3,6 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>eventos juego</name>
     <events>
+        <variable constant="0" name="cronometroActivo" sid="499549038211300" static="0" type="number">0</variable>
+        <variable constant="0" name="TiempoRestante" sid="118458270251005" static="0" type="number">20</variable>
         <event-block sid="171811992026573">
             <conditions />
             <actions />
@@ -12,6 +14,54 @@
             <actions />
         </event-block>
         <event-block sid="998409148810575">
+            <conditions />
+            <actions />
+        </event-block>
+        <event-block sid="851464645160690">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="321619777741205" type="System">
+                    <param id="0" name="Interval (seconds)">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="703963886767743" type="System">
+                    <param id="0" name="Variable">cronometroActivo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="175643237667708" type="System">
+                    <param id="0" name="Variable">cronometroActivo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="570909189309341" type="System">
+                    <param id="0" name="Variable">TiempoRestante</param>
+                    <param id="1" name="Value">TiempoRestante - 1</param>
+                </action>
+                <action id="0" name="Set text" sid="621177584231511" type="cronometro">
+                    <param id="0" name="Text">TiempoRestante</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="491386831816999">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="643826417291364" type="System">
+                    <param id="0" name="Variable">TiempoRestante</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">-1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="743154894173411" type="System">
+                    <param id="0" name="Layout">pantalla inicio</param>
+                </action>
+                <action id="-9" name="Set value" sid="494044766107937" type="System">
+                    <param id="0" name="Variable">cronometroActivo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="951354782116938">
             <conditions />
             <actions />
         </event-block>

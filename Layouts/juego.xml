@@ -1185,10 +1185,10 @@
                 </instance>
                 <instance type="Puntos" uid="38">
                     <properties>
-                        <text>Text</text>
+                        <text>Total:</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-16</font>
-                        <color>0,0,0</color>
+                        <font>Century,-64,700,0</font>
+                        <color>255,255,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
@@ -1198,11 +1198,65 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1529</x>
-                        <y>44</y>
+                        <x>1373</x>
+                        <y>36</y>
                         <z>0</z>
-                        <width>200</width>
-                        <height>30</height>
+                        <width>213</width>
+                        <height>111</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Text2" uid="47">
+                    <properties>
+                        <text>Tiempo</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Century,-64,700,0</font>
+                        <color>255,255,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>37</x>
+                        <y>34</y>
+                        <z>0</z>
+                        <width>267</width>
+                        <height>110</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="cronometro" uid="48">
+                    <properties>
+                        <text>20</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Century,-64,400,0</font>
+                        <color>255,255,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>313</x>
+                        <y>45</y>
+                        <z>0</z>
+                        <width>438</width>
+                        <height>224</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
