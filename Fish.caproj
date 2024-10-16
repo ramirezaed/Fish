@@ -825,6 +825,99 @@
         <object-type name="cronometro" sid="372517656925789">
             <plugin id="Text" />
         </object-type>
+        <object-type name="Sprite30" sid="822048318730721">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="527830799875685" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenovo\Downloads\piedra.png">
+                        <collision-poly>
+                            <point x="0.267578" y="0.267578" />
+                            <point x="0.5" y="0.154297" />
+                            <point x="0.759766" y="0.240234" />
+                            <point x="0.886719" y="0.5" />
+                            <point x="0.761719" y="0.761719" />
+                            <point x="0.5" y="0.845703" />
+                            <point x="0.1875" y="0.8125" />
+                            <point x="0.144531" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite31" sid="879289116922629">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="160040936475904" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenovo\Downloads\rocas.png">
+                        <collision-poly>
+                            <point x="0.169922" y="0.169922" />
+                            <point x="0.5" y="0.0605469" />
+                            <point x="0.919922" y="0.0800781" />
+                            <point x="0.966797" y="0.5" />
+                            <point x="0.642578" y="0.642578" />
+                            <point x="0.5" y="1" />
+                            <point x="0.113281" y="0.886719" />
+                            <point x="0.222656" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite32" sid="290705401870070">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="230699439657328" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenovo\Downloads\cesped.png">
+                        <collision-poly>
+                            <point x="0.128906" y="0.128906" />
+                            <point x="0.5" y="0.283203" />
+                            <point x="0.689453" y="0.310547" />
+                            <point x="0.908203" y="0.5" />
+                            <point x="0.945313" y="0.945313" />
+                            <point x="0.5" y="0.958984" />
+                            <point x="0.0546875" y="0.945313" />
+                            <point x="0.144531" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite33" sid="683484586320801">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="107429790943026" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenovo\Downloads\cesped (1).png">
+                        <collision-poly>
+                            <point x="0.292969" y="0.292969" />
+                            <point x="0.5" y="0.222656" />
+                            <point x="0.707031" y="0.292969" />
+                            <point x="0.818359" y="0.5" />
+                            <point x="0.779297" y="0.779297" />
+                            <point x="0.220703" y="0.779297" />
+                            <point x="0.181641" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite34" sid="490803373578965">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="687537968387159" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenovo\Downloads\cesped (2).png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.345703" />
+                            <point x="0.5" y="0.617188" />
+                            <point x="0.734375" y="0.265625" />
+                            <point x="0.916016" y="0.5" />
+                            <point x="0.822266" y="0.822266" />
+                            <point x="0.177734" y="0.822266" />
+                            <point x="0.107422" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
