@@ -21,6 +21,7 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="Timer" version="1">Timer</behavior>
@@ -824,6 +825,11 @@
         </object-type>
         <object-type name="cronometro" sid="372517656925789">
             <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Pin" sid="167586387756204">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
         </object-type>
         <object-type name="Sprite30" sid="822048318730721">
             <plugin id="Sprite" />
@@ -915,6 +921,22 @@
                             <point x="0.107422" y="0.5" />
                         </collision-poly>
                     </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite35" sid="126731785533843">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="980245626440971">
+                    <behavior id="Pin" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="996837222254803">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="960735559088830" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>

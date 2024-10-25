@@ -65,5 +65,9 @@
             <conditions />
             <actions />
         </event-block>
+        <event-block sid="721477801486512">
+            <conditions />
+            <actions />
+        </event-block>
     </events>
 </c2eventsheet>
