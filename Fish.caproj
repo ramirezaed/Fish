@@ -21,6 +21,7 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Car" version="1">Car</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
@@ -932,6 +933,9 @@
                 </behavior-type>
                 <behavior-type name="Sine" sid="996837222254803">
                     <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Car" sid="709259194996800">
+                    <behavior id="Car" />
                 </behavior-type>
             </behaviors>
             <animation-folder>

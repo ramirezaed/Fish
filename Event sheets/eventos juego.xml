@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>eventos juego</name>
     <events>
+        <variable constant="0" name="puntos_pesca" sid="929011354491651" static="0" type="number">0</variable>
         <variable constant="0" name="cronometroActivo" sid="499549038211300" static="0" type="number">0</variable>
         <variable constant="0" name="TiempoRestante" sid="118458270251005" static="0" type="number">20</variable>
         <event-block sid="171811992026573">
@@ -61,13 +62,21 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="951354782116938">
-            <conditions />
-            <actions />
-        </event-block>
-        <event-block sid="721477801486512">
-            <conditions />
-            <actions />
+        <event-block sid="575974597961177">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="625405490553753" type="Sprite35">
+                    <param id="0" name="Object">Sprite22</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="745839243093740" type="System">
+                    <param id="0" name="Variable">puntos_pesca</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="405954446173906" type="Puntos">
+                    <param id="0" name="Text">puntos_pesca</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

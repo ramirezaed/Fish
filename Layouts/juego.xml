@@ -1311,6 +1311,19 @@
                                 <magnitude-random>0</magnitude-random>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Car">
+                            <properties>
+                                <max-speed>350</max-speed>
+                                <acceleration>200</acceleration>
+                                <deceleration>300</deceleration>
+                                <steer-speed>225</steer-speed>
+                                <drift-recover>185</drift-recover>
+                                <friction>0.4</friction>
+                                <set-angle>Yes</set-angle>
+                                <default-controls>Yes</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
